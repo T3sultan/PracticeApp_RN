@@ -21,10 +21,10 @@ export default function App() {
           showLabel: false,
           style: {
             position: "absolute",
-            backgroundColor: "cyan",
+            backgroundColor: "#fff",
             elevation: 0,
             borderRadius: 10,
-            height: 60
+            height: 45
           }
         }}
 
@@ -117,10 +117,10 @@ export default function App() {
         >
 
         </Tab.Screen>
-        <Tab.Screen 
-        name="Setting" 
-        component={Setting} 
-        options={{
+        <Tab.Screen
+          name="Setting"
+          component={Setting}
+          options={{
             title: '', headerTransparent: true,
             tabBarLabel: 'Setting',
             tabBarIcon: ({ focused, color, size }) => (
