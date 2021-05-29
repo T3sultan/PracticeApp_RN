@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet,Image } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import { LinearGradient } from "expo-linear-gradient";
 
 
@@ -10,15 +10,19 @@ const HomeRewards = () => {
                 <Text style={{ fontWeight: "bold", fontSize: 16, color: "black", paddingTop: 15 }}>Rewards</Text>
             </View>
             <View style={{ paddingTop: 15 }}>
-                <LinearGradient colors={['#6c13d7', '#6c13d7']} style={{ borderRadius: 15 }}>
+                <LinearGradient colors={['cyan', '#6c13d7',]} style={{ borderRadius: 15 }}>
                     <View style={styles.container}>
                         <Text style={styles.bitcoinText}>Discover ways to earn coin</Text>
                         <Text style={styles.earningText}>Start Earning</Text>
                         <Image
-                        source={require("../../../assets/images/medal.jpeg")}
-                        resizeMode="contain"
-                            style={{height:150,
-                            width:300}}
+                            source={require("../../../assets/images/medal.jpeg")}
+                            resizeMode="contain"
+                            style={{
+                                height: 150,
+                                width: 300,
+                                borderRadius: 10,
+                              
+                            }}
                         />
 
                     </View>
